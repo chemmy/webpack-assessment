@@ -32,7 +32,7 @@ const baseConfig = {
 };
 
 module.exports = function (env) {
-  const isDev = process.env.NODE_ENV === "development";
+  const isDev = env === "development";
   console.log(`${isDev ? "Development" : "Production"} build`);
 
   if (isDev) {
