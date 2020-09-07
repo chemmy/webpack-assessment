@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Webpack Assessment",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack",
+    "watch": "npm run build -- --watch",
+    "start": "webpack-dev-server --open"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Melbrian/webpack-assessment.git"
